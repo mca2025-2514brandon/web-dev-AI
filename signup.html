@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="form-card">
+        <h1>Sign Up to Register your details</h1>
+        
+        <form action="" id="signup-form">
+            <label for="fullname">Enter your name:</label>
+            <input class="form-input" type="text" id="fullname" name="fullname">
+            <span class="error-msg" id="fullname-error"></span>
+
+            <label for="email">Enter your email:</label>
+            <input class="form-input" type="email" id="email" name="email">
+            <span class="error-msg" id="email-error"></span>
+
+            <label for="password">Enter your password:</label>
+            <input class="form-input" type="password" name="password" id="password">
+            <span class="error-msg" id="password-error"></span>
+
+            <label for="confirm-password">Confirm password:</label>
+            <input class="form-input" type="password" name="confirm-password" id="confirm-password">
+            <span class="error-msg" id="confirm-password-error"></span>
+
+            <label for="profile-pic">Upload profile picture:</label>
+            <input class="form-input" type="file" name="profile-pic" id="profile-pic" accept="image/*">
+            <span class="error-msg" id="profile-pic-error"></span>
+
+            <label for="document">Upload your document of proof:</label>
+            <input class="form-input" type="file" name="document" id="document" accept=".docx, .pdf">
+            <span class="error-msg" id="document-error"></span>
+
+            <button type="submit">Submit</button>
+
+            <a href="login.html">Already have an account? Login</a>
+        </form>
+    </section>
+    <script src="signup-validation.js"></script>
+</body>
+</html>
