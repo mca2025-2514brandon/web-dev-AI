@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section class="form-card">
         <h1>Welcome to our Login Page!</h1>
@@ -17,7 +19,11 @@
             <span class="error-msg" id="email-error"></span>
 
             <label for="password">Password:</label>
-            <input class="form-input" type="password" name="password" id="password">
+            <!-- creating a wrapper/component for password visibility toggle to be used for JQuery -->
+            <div class="password-wrapper">
+                <input class="form-input" type="password" name="password" id="password">
+                <button type="button" id="toggle-password">👁</button>
+            </div>
             <span class="error-msg" id="password-error"></span>
 
             <button type="submit">Submit</button>
@@ -25,6 +31,10 @@
             <a href="signup.html">Don't have an account? Sign Up</a>
         </form>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery-components.js"></script>
     <script src="login-validation.js"></script>
 </body>
+
 </html>

@@ -20,11 +20,19 @@
             <span class="error-msg" id="email-error"></span>
 
             <label for="password">Enter your password:</label>
-            <input class="form-input" type="password" name="password" id="password">
+            <div class="password-wrapper">
+                <input class="form-input" type="password" name="password" id="password">
+                <button type="button" id="toggle-password">👁</button>
+            </div>
+            <!-- character counter component to be used for JQuery for counting the length of the password -->
+            <span id="char-counter" style="font-size: 12px; color: #ff6b6b;">0/8 characters</span>
             <span class="error-msg" id="password-error"></span>
 
             <label for="confirm-password">Confirm password:</label>
-            <input class="form-input" type="password" name="confirm-password" id="confirm-password">
+            <div class="password-wrapper">
+                <input class="form-input" type="password" name="confirm-password" id="confirm-password">
+                <button type="button" id="toggle-confirm-password">👁</button>
+            </div>
             <span class="error-msg" id="confirm-password-error"></span>
 
             <label for="profile-pic">Upload profile picture:</label>
@@ -40,6 +48,9 @@
             <a href="login.html">Already have an account? Login</a>
         </form>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery-components.js"></script>
     <script src="signup-validation.js"></script>
 </body>
 </html>
